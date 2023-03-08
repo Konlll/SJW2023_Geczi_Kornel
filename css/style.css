@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap');
+:root{
+    --white: #fff;
+    --green: #5d6a09;
+    --darkgreen: #414a04;
+    --red: #81150b;
+    --light-yellow: #ffeccb;
+}
+
+body{
+    background-image: url("../img/bg_pizza.jpg");
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+h1{
+    font-size: 7rem;
+    text-align: center;
+    color: var(--green);
+    font-variant: small-caps;
+}
+
+h2{
+    font-size: 3rem;
+    color: var(--green)
+}
+
+h1, h2{
+    font-family: 'Cabin Sketch', cursive; 
+}
+
+ul{
+    list-style-image: url("../img/pizza_icon.png");
+}
+
+span.span-pizza{
+    color: var(--darkgreen);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.main-page p{
+    line-height: 2;
+    text-indent: 15px;
+}
+
+.navbar{
+    background-color: var(--red) !important;
+}
+
+.navbar a{
+    color: #fff;
+}
+
+.container{
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.list-pizza{
+    margin: 0 40px;
+}
+
+@media(max-width: 768px){
+    h1{
+        font-size: 50px;
+    }
+}
