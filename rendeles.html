@@ -38,7 +38,63 @@
 
     <div class="container">
         <div class="row">
-            .
+            <div class="col-12">
+                <h1>Pizzarendelés</h1>
+            </div>
+        </div>
+        <div class="row form-pizza">
+            <div class="col-12">
+                <form>
+                    <div class="mb-3">
+                        <label for="pizza-select" class="form-label">Pizza típus</label>
+                        <select id="pizza-select" class="form-select" aria-label="Pizza típus">
+                            <option selected>Válasszon egyet</option>
+                            <option value="3200">Nápolyi pizza</option>
+                            <option value="3000">Bolognai pizza</option>
+                            <option value="2800">Songoku pizza</option>
+                            <option value="2900">Hawaii pizza</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="db" class="form-label">Darabszám</label>
+                        <input type="number" class="form-control" id="db" min="0">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <div class="extras">
+                            <span>Extrák</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="form-check-input" id="cheese">
+                            <label class="form-check-label" for="cheese">Sajt</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="form-check-input" id="ham">
+                            <label class="form-check-label" for="ham">Sonka</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="form-check-input" id="corn">
+                            <label class="form-check-label" for="corn">Kukorica</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="form-check-input" id="mushroom">
+                            <label class="form-check-label" for="mushroom">Gomba</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="form-check-input" id="chili">
+                            <label class="form-check-label" for="chili">Chili paprika</label>
+                        </div>
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-success" type="button">Megrendelem</button>
+                    </div>
+                </form>
+                <div class="alert alert-success d-none" role="alert">
+                    <h3>A rendelésed sikeres!</h3>
+                    <p class="px-3">A rendelésed sorszáma: <span id="order-id"></span></p>
+                    <hr>
+                    <p class="px-3">A rendelésed összege: <span id="order-summary"></span></p>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -48,6 +104,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
         integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
         crossorigin="anonymous"></script>
+        <script src="js/script.js"></script>
 </body>
 
 </html>

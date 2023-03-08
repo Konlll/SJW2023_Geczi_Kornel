@@ -105,6 +105,10 @@ span.span-pizza{
     border: 6px double var(--green);
 }
 
+.form-pizza{
+    margin: 0 100px;
+}
+
 @media(max-width: 768px){
     h1{
         font-size: 50px;
