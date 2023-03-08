@@ -33,6 +33,46 @@ ul{
     list-style-image: url("../img/pizza_icon.png");
 }
 
+li{
+    line-height: 30px;
+}
+
+img{
+    box-shadow: 2px 2px 5px var(--green);
+}
+
+img.first-image{
+    margin: auto;
+}
+
+figcaption{
+    text-align: center;
+}
+
+footer{
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--red);
+}
+
+footer p{
+    color: #fff;
+    margin-top: 10px;
+}
+
+footer a{
+    color: #fff;
+    text-decoration: none;
+    font-variant: small-caps;
+    padding: 5px;
+}
+
+footer a:hover{
+    background-color: #000;
+}
+
 span.span-pizza{
     color: var(--darkgreen);
     font-weight: bold;
@@ -57,7 +97,12 @@ span.span-pizza{
 }
 
 .list-pizza{
-    margin: 0 40px;
+    margin: 0 100px;
+}
+
+.modern-pizza{
+    background-color: var(--light-yellow);
+    border: 6px double var(--green);
 }
 
 @media(max-width: 768px){
